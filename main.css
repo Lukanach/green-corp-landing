@@ -46,6 +46,11 @@ button {
 .about__sun-image {
     width: 100px;
     height: 100px;
+    animation-name: rotation;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    position: absolute;
 }
 
 .about {
@@ -198,3 +203,9 @@ footer {
 .footer_links a {
     margin-bottom: 15px;
 }
+
+@keyframes rotation {
+   from { transform: rotate (0deg);}
+   to { transform: rotate(360deg);}
+}
+
