@@ -285,6 +285,9 @@ footer {
     }
 }
 
+:root {
+    --animate-duration: 2s;
+  }
 
 
 
