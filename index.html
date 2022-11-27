@@ -3,7 +3,7 @@
 <head>
   <title>Солнечные батареи GreenCorp</title>
   <link rel="stylesheet" href="FA/css/all.min.css">
-  <link rel="stylesheet" href="main.css"
+  <link rel="stylesheet" href="main.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;500;600;700;800&display=swap" rel="stylesheet">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -12,7 +12,7 @@
   <header>
     <img class="header__logo" src='img/logo.svg'>
     <div class="header__controls">
-      <a href="#contacts">Контакты</a>
+      <a href="#form">Контакты</a>
       <button>Заказать</button>
     </div>
   </header>
@@ -21,14 +21,14 @@
     <div class="about__info animate__animated animate__fadeInLeft animate__repeat-1">
       <h1>Солнечные панели GreenRobotic</h1>
       <p>Производите дешёвую экологически чистую электроэнергию из солнечного света</p>
-        <button>Узнать подробнее<i class="fa-sharp fa-solid fa-chevron-right"></i></button>
+        <button class="more-button" href="#features">Узнать подробнее<i class="fa-sharp fa-solid fa-chevron-right"></i></button>
     </div>
     <div class="about__images  animate__animated animate__fadeInRight animate__repeat-1">
       <img class="about__sun-image" src="img/sun.png">
       <img class="about__image" src="img/solar-panel.png">
     </div>
   </section>
-  <section class="features">
+  <section class="features" id="features">
     <div class="cards">
       <div class="card">
         <div class="card__logo"><i class="fa-solid fa-solar-panel"></i></div>
@@ -49,7 +49,11 @@
     <div class="features__border"></div>
     <div class="features__feedback">
       <div class="features__feedback-left">
-      <h2>Нам доверяет <br>5000+ счастливых клиентов</h2>
+        <h2>
+          Нам доверяет
+          <br>
+          <div class="features__clients-count">5000+</div> счастливых клиентов
+        </h2>
       <p>Мы помогли тысячам людей перейти на зеленую энергию 
         <br> После заказа мы позаботимся обо всем: доставка панелей, проект, установка, помощь в использовании
       </p>
@@ -80,7 +84,7 @@
       </div>
     </div>
   </section>
-  <section class="form">
+  <section class="form" id = "form">
     <div class="form__container">
       <h1>Оставьте свои контакты</h1>
       <p>Поможем подобрать модель.<br>Выбрать удобный вариант доставки и установки.<br>Гарантия возврата денег.<br></p>
@@ -103,7 +107,7 @@
             <option value="10-30">10 000₽ – 30 000₽</option>
             <option value="30-60">30 000₽ – 60 000₽</option>
             <option value="60-100">60 000₽ – 100 000₽</option>
-            <option value="100+">100 000₽</option>
+            <option value="other">Другое</option>
           </select>
         </div>
         <button class="form__submit" type="submit">
@@ -140,5 +144,6 @@
   </footer>
   <script src="FA/css/all.min.css"></script>
   <script src="js/canvas.js"></script>
+  <script src="js/animations.js"></script>
 </body>
 </html>
